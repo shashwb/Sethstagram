@@ -1,2 +1,18 @@
 <!-- view for the posts#index route (located under posts) -->
 <h1>Sethstagram</h1>
+
+<% @posts.each do |post| %>
+
+  <!-- <p> -->
+    <%= image_tag post.image.url(:medium) %>
+    <%= post.caption %>
+  <!-- </p> -->
+  <!-- :options => {:align=>"left", :style=>"size: 100px"} -->
+
+<% end %>
+
+<style>
+.post_image {
+
+}
+</style>

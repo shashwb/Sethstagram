@@ -29,6 +29,9 @@ gem 'simple_form'
 
 gem 'haml'
 
+# fix rails console errors
+gem 'rb-readline'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -39,6 +42,7 @@ gem 'haml'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
@@ -47,4 +51,5 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
 end

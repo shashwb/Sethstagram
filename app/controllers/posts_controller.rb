@@ -3,8 +3,12 @@
 class PostsController < ApplicationController
 
   def index
-    # current does nothing
-    # @post = Post.index
+    # instance variable that collects all of the posts in the Post model
+    # this will allow us to display all of our posts in our index view
+    @posts = Post.all
+    # now we want ot iterate through all of the posts in the view
+    # now that the logic is taken care of
+
   end
 
   def new
